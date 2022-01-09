@@ -15,38 +15,42 @@
 
 <body>
 
-<nav class="site-nav">
+    <nav class="site-nav">
 
-    <ul>
-        <li class="home"><a href="/dohertycodes.github.io/index.html">Home</a></li>
-        <li><a href="/dohertycodes.github.io/pages/members.html">Members</a></li>
-        <li><a href="/dohertycodes.github.io/pages/projects.html">Projects</a></li>
-        <li style="float:right">
-            <button class="theme-switch" id="theme-switch">
-                <strong>◑</strong>
-            </button>
-        </li>
-    </ul>
+        <ul>
+            <li class="home"><a href="/dohertycodes.github.io/index.html">Home</a></li>
+            <li><a href="/dohertycodes.github.io/pages/members.html">Members</a></li>
+            <li><a href="/dohertycodes.github.io/pages/projects.html">Projects</a></li>
+            <li style="float:right">
+                <button class="theme-switch" id="theme-switch">
+                    <strong>◑</strong>
+                </button>
+            </li>
+        </ul>
 
-</nav>
+    </nav>
 
-<header>
+    <header>
 
-    <h1 class="page-title"><strong>firstname lastname</strong></h1> <!-- YOUR NAME GOES HERE -->
+        <h1 class="page-title"><strong>firstname lastname</strong></h1> <!-- YOUR NAME GOES HERE -->
 
-</header>
+    </header>
 
-<!-- DON'T EDIT ABOVE THIS LINE (EXCEPT FOR YOUR NAME) UNLESS YOU KNOW WHAT YOU'RE DOING! -->
+    <!-- DON'T EDIT ABOVE THIS LINE (EXCEPT FOR YOUR NAME) UNLESS YOU KNOW WHAT YOU'RE DOING! -->
 
-<!-- YOUR CODE GOES HERE -->
+    <!-- YOUR CODE GOES HERE -->
 
-<!-- DON'T EDIT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU'RE DOING! -->
+    <!-- DON'T EDIT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU'RE DOING! -->
 
-<div class="spacer"></div>
+    <div class="spacer"></div>
 
-<footer>
-    <h3 class="footer-text">Made with ♥ by Doherty Codes ©2021</h3>
-</footer>
+    <footer>
+        <h3 class="footer-text">Made with ♥ by Doherty Codes ©<span class="year"></span></h3>
+    </footer>
+
+    <script>
+        document.querySelector(".year").innerHTML = new Date().getFullYear(); // Get year for footer
+    </script>
 
 </body>
 

@@ -18,7 +18,7 @@
   <nav class="site-nav">
 
     <ul>
-      <li class="home"><a href="/dohertycodes.github.io/index.html">Home</a></li>
+      <li class="home"><a href="/index.html">Home</a></li>
       <li><a href="members.html">Members</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li style="float:right">
@@ -48,9 +48,12 @@
   <div class="spacer"></div>
 
   <footer>
-    <h3 class="footer-text">Made with ♥ by Doherty Codes ©2021</h3>
+    <h3 class="footer-text">Made with ♥ by Doherty Codes ©<span class="year"></span></h3>
   </footer>
 
+  <script>
+    document.querySelector(".year").innerHTML = new Date().getFullYear(); // Get year for footer
+  </script>
 </body>
 
 </html>
