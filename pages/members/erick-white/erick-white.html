@@ -7,7 +7,7 @@
 
     <title>Erick White</title> <!-- YOUR NAME GOES HERE -->
 
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/pages/members/erick-white/css/main.css" rel="stylesheet" type="text/css">
 
     <script src="/js/theme-switcher.js"></script>
 
@@ -15,80 +15,91 @@
 
 <body>
 
-<nav class="site-nav">
+    <nav class="site-nav">
 
-    <ul>
-        <li class="home"><a href="/dohertycodes.github.io/index.html">Home</a></li>
-        <li><a href="/dohertycodes.github.io/pages/members.html">Members</a></li>
-        <li><a href="/dohertycodes.github.io/pages/projects.html">Projects</a></li>
-        <li style="float:right">
-            <button class="theme-switch" id="theme-switch">
-                <strong>◑</strong>
-            </button>
-        </li>
-    </ul>
+        <ul>
+            <li class="home"><a href="/index.html">Home</a></li>
+            <li><a href="/pages/members.html">Members</a></li>
+            <li><a href="/pages/projects.html">Projects</a></li>
+            <li style="float:right">
+                <button class="theme-switch" id="theme-switch">
+                    <strong>◑</strong>
+                </button>
+            </li>
+        </ul>
 
-</nav>
+    </nav>
 
-<header>
+    <header>
 
-    <h1 class="page-title"><strong>Erick White</strong></h1> <!-- YOUR NAME GOES HERE -->
+        <h1 class="page-title"><strong>Erick White</strong></h1> <!-- YOUR NAME GOES HERE -->
 
-</header>
+    </header>
 
-<!-- DON'T EDIT ABOVE THIS LINE (EXCEPT FOR YOUR NAME) UNLESS YOU KNOW WHAT YOU'RE DOING! -->
+    <!-- DON'T EDIT ABOVE THIS LINE (EXCEPT FOR YOUR NAME) UNLESS YOU KNOW WHAT YOU'RE DOING! -->
 
-<article>
+    <div class="layout-manager">
 
-    <div class="container">
-        <h1 class="intro">Student. Programmer. Explorer.</h1>
+        <article>
+
+            <div class="container">
+                <h1 class="intro">Student. Programmer. Explorer.</h1>
+            </div>
+
+            <br>
+
+            <div class="container">
+                <h2 class="content-title">Welcome to my website!</h2>
+
+                <p class="content">Be sure to explore and learn a bit about me!</p>
+            </div>
+
+            <br>
+
+            <div class="container">
+                <h2 class="content-title">About Me</h2>
+
+                <p class="content">
+                    I am a high school senior with a passion for programming, engineering, mathematics, physics, astronomy, and chemistry.
+                    I've wanted to be an astronaut since I was extremely young; I plan to study aerospace engineering at university, hopefully eventually landing me the job of my dreams.
+                    I enjoy volunteering with my local astronomical society at outreach events, as well as programming for a hobby.
+                </p>
+            </div>
+
+        </article>
+
+        <!--
+
+        TODO: Implement profile image
+          -Currently messes up page layout
+
+        <div class="profile-picture">
+          <img src="assets/images/ErickWhite.jpg" alt="Erick White"/>
+        </div>
+
+        -->
+
     </div>
 
     <br>
 
-    <div class="container">
-        <h2 class="content-title">Welcome to my website!</h2>
+    <h3 class="counter">
+        Day <span class="day-counter"></span> of waiting for GitHub Pages to support SSI!
+    </h3>
 
-        <p class="content">Be sure to explore and learn a bit about me!</p>
-    </div>
+    <script>
+        document.querySelector(".day-counter").innerHTML = Math.floor((new Date().getTime() - new Date("12/28/2021").getTime()) / 86400000) + 1; // Function to calculate the number of days between two dates
+    </script>
 
-</article>
+    <br>
 
-<br>
+    <!-- DON'T EDIT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU'RE DOING! -->
 
-<article>
+    <div class="spacer"></div>
 
-    <div class="container">
-        <h2 class="content-title">About Me</h2>
-
-        <p class="content">
-            I am a high school senior with a passion for programming, engineering, mathematics, physics, astronomy, and chemistry.
-            I've wanted to be an astronaut since I was extremely young; I plan to study aerospace engineering at university, hopefully eventually landing me the job of my dreams.
-            I enjoy volunteering with my local astronomical society at outreach events, as well as programming for a hobby.
-        </p>
-    </div>
-
-</article>
-
-<br>
-
-<h3 class="counter">
-    Day <span class="day-counter"></span> of waiting for GitHub Pages to support SSI!
-</h3>
-
-<script>
-    document.querySelector(".day-counter").innerHTML = Math.floor((new Date().getTime() - new Date("12/28/2021").getTime()) / 86400000) + 1; // Function to calculate the number of days between two dates
-</script>
-
-<br>
-
-<!-- DON'T EDIT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU'RE DOING! -->
-
-<div class="spacer"></div>
-
-<footer>
-    <h3 class="footer-text">Made with ♥ by Doherty Codes ©2021</h3>
-</footer>
+    <footer>
+        <h3 class="footer-text">Made with ♥ by Doherty Codes ©2021</h3>
+    </footer>
 
 </body>
 
