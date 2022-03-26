@@ -11,10 +11,19 @@
     --heading-font: 'Raleway', sans-serif;
     --main-font: 'Open Sans', sans-serif;
 
-    --accent-background: #354899;
-    --accent-light: #42904c;
-    --accent-dark: #18236b;
+    --accent-background: #1d7fdb;
+    --accent-light: #67aeff;
+    --accent-dark: #0053a9;
     --accent-text: #000;
+
+    --java-primary: #f7901e;
+    --java-secondary: #007599;
+
+    --python-primary: #3777ab;
+    --python-secondary: #ffd343;
+
+    --cs-primary: #a078db;
+    --cs-secondary: #2c006b;
 }
 
 [data-theme="light"] {
@@ -26,10 +35,19 @@
     --heading-font: 'Raleway', sans-serif;
     --main-font: 'Open Sans', sans-serif;
 
-    --accent-background: #354899;
-    --accent-light: #42904c;
-    --accent-dark: #18236b;
+    --accent-background: #04458f;
+    --accent-light: #4c70c0;
+    --accent-dark: #001f61;
     --accent-text: #fff;
+
+    --java-primary: #f7901e;
+    --java-secondary: #007599;
+
+    --python-primary: #3777ab;
+    --python-secondary: #ffd343;
+
+    --cs-primary: #2c006b;
+    --cs-secondary: #a078db;
 }
 
 html {
