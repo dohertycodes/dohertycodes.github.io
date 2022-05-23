@@ -11,9 +11,9 @@
     --heading-font: 'Raleway', sans-serif;
     --main-font: 'Open Sans', sans-serif;
 
-    --accent-background: #1d7fdb;
-    --accent-light: #67aeff;
-    --accent-dark: #0053a9;
+    --accent-background: #354899;
+    --accent-light: #42904c;
+    --accent-dark: #18236b;
     --accent-text: #000;
 }
 
@@ -26,9 +26,9 @@
     --heading-font: 'Raleway', sans-serif;
     --main-font: 'Open Sans', sans-serif;
 
-    --accent-background: #04458f;
-    --accent-light: #4c70c0;
-    --accent-dark: #001f61;
+    --accent-background: #354899;
+    --accent-light: #42904c;
+    --accent-dark: #18236b;
     --accent-text: #fff;
 }
 
