@@ -7,13 +7,21 @@
     grid-gap: 1rem;
 }
 
+<<<<<<< HEAD
 @media (min-width: 768px) {
+=======
+@media (min-width: 769px) {
+>>>>>>> main
     .home-grid {
         max-width: 50%;
     }
 }
 
+<<<<<<< HEAD
 @media (min-width: 1024px) {
+=======
+@media (min-width: 1025px) {
+>>>>>>> main
     .home-grid {
         max-width: 20%;
     }
@@ -34,7 +42,11 @@
     transition-duration: 0.25s;
 }
 
+<<<<<<< HEAD
 @media (min-width: 1024px) {
+=======
+@media (min-width: 1025px) {
+>>>>>>> main
     .container:hover {
         background-color: var(--primary-light);
         transition-duration: 0.25s;
