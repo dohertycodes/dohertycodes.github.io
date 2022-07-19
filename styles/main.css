@@ -1,0 +1,353 @@
+/*
+Screen sizes for media queries:
+mobile-s: 320px;
+mobile-m: 375px;
+mobile-l: 425px;
+tablet-s: 600px;
+tablet-m: 768px;
+tablet-l: 900px;
+laptop-s: 1024px;
+laptop-m: 1200px;
+laptop-l: 1440px;
+4k: 2560px;
+ */
+
+[data-theme="dark"] { /* https://www.pullrequest.com/blog/how-to-implement-dark-mode-with-css-js/ */
+    --primary-background: #11161c;
+    --primary-light: #373c43;
+    --primary-dark: #000;
+    --primary-text: #fff;
+
+    --heading-font: Tahoma, sans-serif;
+    --main-font: Tahoma, sans-serif;
+
+    --accent-background: #354899;
+    --accent-light: #42904c;
+    --accent-dark: #18236b;
+    --accent-text: #000;
+}
+
+[data-theme="light"] {
+    --primary-background: #eee;
+    --primary-light: #fff;
+    --primary-dark: #bcbcbc;
+    --primary-text: #000;
+
+    --heading-font: Tahoma, sans-serif;
+    --main-font: Tahoma, sans-serif;
+
+    --accent-background: #354899;
+    --accent-light: #42904c;
+    --accent-dark: #18236b;
+    --accent-text: #fff;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: var(--main-font);
+    font-size: 18px;
+    margin: 0;
+    color: var(--primary-text);
+    background-color: var(--primary-dark);
+}
+
+body {
+    max-width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.main-background {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+    transition: 0.25s;
+}
+
+button {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+svg {
+    width: 2rem;
+    padding: 0;
+    margin: -2.5rem 1.0rem;
+    color: var(--primary-text);
+}
+
+@media (min-width: 1024px) {
+    svg {
+        width: 2.5rem;
+    }
+}
+
+#menu-button {
+    display: inline;
+    background-color: #0000;
+    border: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition-duration: 0.50s;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menu-button:hover {
+    transform: scale(1.35);
+    transition-duration: 0.50s;
+}
+
+#theme-switch {
+    display: inline;
+    background-color: #0000;
+    border: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition-duration: 0.50s;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#theme-switch:hover {
+    transform: scale(1.35);
+    transition-duration: 0.50s;
+}
+
+nav {
+    background-color: var(--primary-light);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    display: none;
+    z-index: 2;
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    nav {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+    nav {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav {
+        width: 20%;
+    }
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-size: 2rem;
+    padding-left: .5rem;
+}
+
+nav li:hover {
+    background-color: var(--accent-background);
+    color: var(--accent-text);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-text);
+    display: block;
+    padding: 0.75rem;
+}
+
+.spacer {
+    height: 7rem;
+}
+
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-dark);
+}
+
+.page-title {
+    color: var(--accent-background);
+    font-size: 3rem;
+    margin: 5rem 0.5rem auto;
+    transition-duration: .75s;
+}
+
+@media (min-width: 768px) {
+    .page-title {
+        font-size: 5rem;
+    }
+}
+
+.page-title:hover {
+    color: var(--accent-light);
+}
+
+@media (min-width: 600px) {
+    .page-title:hover {
+        transform: scale(1.2);
+        transition-duration: .75s;
+    }
+}
+
+.page-subtitle {
+    color: var(--accent-light);
+    font-size: 1rem;
+    margin: 0.5rem auto;
+}
+
+@media (min-width: 768px) {
+    .page-subtitle {
+        font-size: 2rem;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-background);
+}
+
+.divider {
+    border-bottom: solid var(--accent-background) 0.5rem;
+    margin: 0.5rem;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--accent-light);
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--primary-dark);
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.footer-text a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--primary-text);
+    transition-duration: .25s;
+}
+
+.footer-text a:hover {
+    color: var(--accent-light);
+    transition-duration: .25s;
+}
+
+form {
+    margin: 0 auto;
+}
+
+#contact-form {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem;
+    border: none;
+}
+
+@media (min-width: 600px) and (max-width: 1023px){
+    #contact-form {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px){
+    #contact-form {
+        width: 30%;
+    }
+}
+
+#contact-form * {
+    display: block;
+    width: 100%;
+    min-height: 1rem;
+    padding: 0.5rem 0;
+}
+
+#contact-form input, textarea {
+    font-family: var(--main-font);
+    color: var(--primary-text);
+    background-color: var(--primary-background);
+    box-sizing: border-box;
+    margin: 0.5rem 0 0 0;
+    padding: 0.5rem;
+    border: 0.25rem solid var(--accent-dark);
+    border-radius: 0.5rem;
+}
+
+#contact-form textarea {
+    padding: 0.5rem;
+    resize: none;
+}
+
+#submit {
+    line-height: 0;
+    height: 2em;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: var(--primary-light);
+    color: var(--primary-text);
+    margin: auto;
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+
+#submit:hover {
+    background-color: var(--accent-light);
+    color: var(--accent-text);
+    border-color: var(--accent-light);
+    transition-duration: 0.25s;
+}
+
+#confirmation {
+    display: none;
+    margin: 1rem;
+}
+
+.empty-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
